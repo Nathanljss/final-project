@@ -11,10 +11,10 @@ export default async function PostsPage() {
       <ul>
         {jobposts.map((jobpost) => (
           <li key={jobpost.id}>
-            {jobposter}
-            {jobtitle}
-            {jobdesc}
-            {jobsalary}
+            {jobpost.jobposter}&nbsp;
+            {jobpost.jobtitle}&nbsp;
+            {jobpost.jobdesc}&nbsp;
+            {jobpost.jobsalary}&nbsp;
           </li>
         ))}
       </ul>
