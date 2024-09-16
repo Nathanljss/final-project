@@ -1,15 +1,22 @@
-import db from "../src/utils/utilities";
+import { db } from "@/utils/utilities.js";
 
-export default async function Post({ params }) {
-  const post = (await db.query(`SELECT * FROM posts WHERE id = ${params.id};`))
-    .rows;
+export default async function PostPage({ params }) {
+  console.log(params);
+  const jobpost = (
+    await db.query(`SELECT * FROM jobstable WHERE id = ${params.id};`)
+  ).rows;
 
   return (
     <>
-      {post.map((post) => (
+      {jobpost.map((jobpost) => (
         <>
-          <h2 key={post.id}>{post.title}</h2>
-          <p>{post.content}</p>
+          <p>Currently viewing: </p>
+          <h2 key={jobpost.id}>{jobpost.jobtitle}</h2>
+          <p>
+            {jobpost.jobposter}&nbsp;
+            {jobpost.jobtitle}&nbsp;
+            {jobpost.jobdesc}&nbsp; £{jobpost.jobsalary} Per Annum
+          </p>
         </>
       ))}
     </>
