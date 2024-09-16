@@ -6,9 +6,9 @@ export default function NavBar() {
       <h1>Jobber</h1>
       <Link href="/">Home</Link>
       &nbsp;&nbsp;
-      <Link href="./pages/aboutus">About us</Link>
+      <Link href="/pages/aboutus">About us</Link>
       &nbsp;&nbsp;
-      <Link href="./pages/posts">Available jobs</Link>
+      <Link href="/pages/posts">Available jobs</Link>
     </>
   );
 }
