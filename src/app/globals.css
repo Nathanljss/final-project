@@ -2,3 +2,29 @@ body {
   min-width: 100vw;
   min-height: 100vh;
 }
+
+.navbar {
+  background-color: grey;
+  border: solid black;
+  border-radius: 20px;
+  float: left;
+}
+
+.cl-userButtonBox {
+  border: solid black;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+header {
+  background-color: rgb(214, 214, 214);
+  border: solid black;
+  border-radius: 20px;
+  width: 250px;
+  text-align: center;
+  padding: 5px;
+}
+.about {
+  text-align: center;
+}
