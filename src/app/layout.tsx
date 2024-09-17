@@ -14,13 +14,10 @@ export default function RootLayout({
           <header>
             <Navbar></Navbar>
           </header>
-          <SignedOut>
-            <h2>Please sign in or create an account to see the listed jobs</h2>
-          </SignedOut>
+          <SignedOut></SignedOut>
           <SignedIn>
-            <UserButton />
+            <UserButton showName={true} />
           </SignedIn>
-
           <main>{children}</main>
         </body>
       </html>

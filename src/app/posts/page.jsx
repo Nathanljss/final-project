@@ -15,7 +15,7 @@ export default async function PostsPage() {
             {jobpost.jobposter}&nbsp;
             {jobpost.jobtitle}&nbsp;
             {jobpost.jobdesc}&nbsp; £{jobpost.jobsalary} Per Annum&nbsp;
-            <Link href="/posts/1">View this job</Link>
+            <Link href={`/posts/${jobpost.id}`}>View this job</Link>
           </li>
         ))}
       </ul>
