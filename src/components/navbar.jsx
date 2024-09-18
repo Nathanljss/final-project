@@ -9,6 +9,8 @@ export default function NavBar() {
       <Link href="/aboutus">About us</Link>
       &nbsp;&nbsp;
       <Link href="/posts">Available jobs</Link>
+      &nbsp;&nbsp;
+      <Link href="/jobpost">Post jobs</Link>
     </div>
   );
 }
