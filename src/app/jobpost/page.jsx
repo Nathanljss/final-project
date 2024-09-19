@@ -27,7 +27,7 @@ export default function JobPost() {
         <form action = {handleAddJob}>
             <input name = "jobposter" placeholder = "Employer Name"/>
             <input name = "jobtitle" placeholder = "Job Title"/>
-            <input name = "jobdesc" placeholder = "Job Description"/>
+            <input name = "jobdesc" placeholder = "Job Description" className = "longinput"/>
             <input name = "jobsalary" placeholder = "Job Salary" type = "number"/>
             <button>Post Job</button>
         </form>

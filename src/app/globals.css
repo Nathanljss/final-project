@@ -28,3 +28,7 @@ header {
 .about {
   text-align: center;
 }
+
+.longinput {
+  width: 90%;
+}
