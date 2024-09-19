@@ -10,9 +10,13 @@ export default async function ApplicationsPage() {
       <h1>See Job applications below</h1>
       <ul>
         {applications.map((applications) => (
-          <li key={applications.id}>
-            {applications.applicant}&nbsp;
-            {applications.coverletter}&nbsp;
+          <li className="applicantdata" key={applications.id}>
+            {applications.applicant}
+            <br></br>
+            {applications.coverletter}
+            <br></br>
+            <br></br>
+            <hr></hr>
           </li>
         ))}
       </ul>

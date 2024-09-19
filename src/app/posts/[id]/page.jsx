@@ -41,8 +41,8 @@ export default async function PostPage({ params }) {
           <div className="JobApplication">
             <h1></h1>
             <form action={handleAddCoverletter}>
-              <input name="applicant" placeholder="Applicant Name" />
-              <input name="coverletter" placeholder="coverletter" />
+              <input name="applicant" placeholder="Applicant Name" required />
+              <input name="coverletter" placeholder="coverletter" required />
               <button>Submit Details</button>
             </form>
           </div>
