@@ -11,7 +11,7 @@ export default async function PostsPage() {
       <h1>Currently available jobs</h1>
       <ul>
         {jobposts.map((jobpost) => (
-          <li key={jobpost.id}>
+          <li className="items" key={jobpost.id}>
             <strong>{jobpost.jobposter}</strong> <br></br>
             <br></br>
             {jobpost.jobtitle}
