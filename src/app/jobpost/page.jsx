@@ -21,22 +21,17 @@ export default function JobPost() {
     console.log("Job Submitted!");
   }
 
-  return (
-    <div className="JobPost">
-      <h1>Post a new job</h1>
-      <form action={handleAddJob}>
-        <input name="jobposter" placeholder="Employer Name" required />
-        <input name="jobtitle" placeholder="Job Title" required />
-        <input name="jobdesc" placeholder="Job Description" required />
-        <input
-          name="jobsalary"
-          placeholder="Job Salary (per annum)"
-          type="number"
-          required
-        />
-        <button>Post Job</button>
-      </form>
-    </div>
-  );
-  //ensure all form input names correspond to the db query input
-}
+    return (
+      <div className="JobPost"> 
+        <h1>Post a new job</h1>
+        <form action = {handleAddJob}>
+            <input name = "jobposter" placeholder = "Employer Name" required/>
+            <input name = "jobtitle" placeholder = "Job Title" required/>
+            <input name = "jobdesc" placeholder = "Job Description" className = "longinput" required/>
+            <input name="jobsalary" placeholder="Job Salary (per annum)" type="number" required/>
+            <button>Post Job</button>
+        </form>
+      </div>
+    );
+    //ensure all form input names correspond to the db query input
+  }
