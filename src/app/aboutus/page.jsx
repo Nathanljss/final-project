@@ -6,7 +6,7 @@ export default function AboutPage() {
         This website was made by a few people on a coding bootcamp as their
         final project with the idea of creating a simple and straight forward
         job board website while also showing off their newly acquired coding
-        skills. <br></br>This site uses Next.js and implements a Clerk user
+        skills. <br></br> This site uses Next.js and implements a Clerk user
         authenticator AND an SQL database API.
       </p>
     </div>

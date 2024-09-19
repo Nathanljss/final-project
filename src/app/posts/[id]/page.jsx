@@ -13,8 +13,8 @@ export default async function PostPage({ params }) {
     async function handleAddCoverletter(formData) {
         "use server";
 
-        const applicant = formData.get("applicant");
-        const coverletter = formData.get("coverletter");
+    const applicant = formData.get("applicant");
+    const coverletter = formData.get("coverletter");
 
         await db.query('INSERT INTO applicationstable (applicant, coverletter, jobsid) VALUES ($1, $2, $3)',
             [applicant, coverletter, jobpost[0].id]
@@ -28,18 +28,22 @@ export default async function PostPage({ params }) {
     <>
       {jobpost.map((jobpost) => (
         <>
-          <p>Currently viewing: </p>
+          <h1>Currently viewing: </h1>
           <h2 key={jobpost.id}>{jobpost.jobtitle}</h2>
           <p>
-            {jobpost.jobposter}&nbsp;
-            {jobpost.jobtitle}&nbsp;
-            {jobpost.jobdesc}&nbsp; £{jobpost.jobsalary} Per Annum
+            <strong>{jobpost.jobposter}</strong>
+            <br></br>
+            <br></br>
+            {jobpost.jobtitle}
+            <br></br>
+            {jobpost.jobdesc}
+            <br></br> £{jobpost.jobsalary} Per Annum
           </p>
           <div className = "JobApplication">
             <h1>Send a cover letter to job poster</h1>
             <form action = {handleAddCoverletter}>
-              <input name = "applicant" placeholder = "Applicant Name"/>
-              <input name = "coverletter" placeholder = "coverletter" className ="longinput"/>
+              <input name = "applicant" placeholder = "Applicant Name" required/>
+              <input name = "coverletter" placeholder = "coverletter" className ="longinput" required/>
               <button>Submit Cover Letter</button>
             </form>
           </div>

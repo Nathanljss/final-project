@@ -11,13 +11,14 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body>
-          <header>
-            <Navbar></Navbar>
-          </header>
-          <SignedOut></SignedOut>
-          <SignedIn>
-            <UserButton showName={true} />
-          </SignedIn>
+          <header></header>
+          <Navbar></Navbar>
+          <div>
+            <SignedOut></SignedOut>
+            <SignedIn>
+              <UserButton showName={true} />
+            </SignedIn>
+          </div>
           <main>{children}</main>
         </body>
       </html>
