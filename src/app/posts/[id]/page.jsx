@@ -1,7 +1,6 @@
 import { db } from "@/utils/utilities.js";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-import { Popup } from 'reactjs-popup';
 
 export default async function PostPage({ params }) {
   console.log(params);
