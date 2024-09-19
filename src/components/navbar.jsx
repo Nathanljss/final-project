@@ -11,6 +11,8 @@ export default function NavBar() {
       <Link href="/posts">Available jobs</Link>
       &nbsp;&nbsp;
       <Link href="/jobpost">Post jobs</Link>
+      &nbsp;&nbsp;
+      <Link href="/applications">See Applicants</Link>
     </div>
   );
 }
